@@ -8,22 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Poems,John,John Keats, Poetry, literature, reading">
     <meta name="description" content="This site is about John Keats, he is a poet">
+    <link rel="stylesheet" href="css/styles.css">
     <title>John Keats Info</title>
 </head>
 
 <body>
     <header>
-        <h1>
+        <h1 id="headerh1">
             This page contains information on the poet John Keats
         </h1>
     </header>
-    <main>
+    <main id="mainSection">
         <section id="BioParagraph">
             <h3>
                 A Biography of John Keats
             </h3>
-            <p>
-            <blockquote cite="https://en.wikipedia.org/wiki/John_Keats">
+            <blockquote cite="https://en.wikipedia.org/wiki/John_Keats" id="Biography">
                 John Keats (31 October 1795 - 23 February 1821) was an English poet of the second
                 generation of Romantic poets, along with Lord Byron and Percy Bysshe Shelley. His poems had been in
                 publication for less than four years when he died of tuberculosis at the age of 25.
@@ -33,14 +33,14 @@
                 writers of
                 the Pre-Raphaelite Brotherhood; <i>the Encyclopædia Britannica</i> of 1888 described his "Ode to a
                 Nightingale" as "one of the final masterpieces". </blockquote>
-            </p>
         </section>
         <section id="FigElement">
-            <h3>
+            <h3 id="photoCaptionAbove">
                 Below is a painting of the poet
             </h3>
-            <figure>
-                <img src="images/JohnKeats.jpg" alt="A Painting of the poet John Keats">
+
+            <figure id="figPhoto">
+                <img src="images/JohnKeats.jpg" alt="A Painting of the poet John Keats" id="photo">
                 <figcaption>A Painting of the poet John Keats</figcaption>
             </figure>
         </section>
@@ -51,44 +51,43 @@
             <q cite="https://www.goodreads.com/work/quotes/1386502-ode-on-a-grecian-urn-and-other-poems"> Heard melodies
                 are sweet, but those unheard, are
                 sweeter</q>
-            <cite>John Keats, Ode On A Grecian Urn and Other Poems</cite>
+            <cite>-John Keats, Ode On A Grecian Urn and Other Poems</cite>
         </section>
         <section id="Video">
-            <h3>
+            <h3 id="videoHeading">
                 A video on Mr.Keats
             </h3>
-            <video width="520" height="300" src="keats.mp4" alt="Video of a poem of John Keats" controls></video>
+            <video id="video" width="520" height="300" src="keats.mp4" alt="Video of a poem of John Keats"
+                controls></video>
         </section>
     </main>
-    <aside>
+    <aside id="theAside">
         <section id="ListsofSites">
-            <h2> Some Links to view </h2>
-            <h4>
-                <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/John_Keats" target="_blank" title="Keats Wikipedia">John
-                            Keats Wikipedia</a>
-                    </li>
-                    <li><a href="https://classicalpoets.org/2017/12/22/10-greatest-poems-by-john-keats/" target="_blank"
-                            title="10 Keats Poems">10 Greatest poems</a></li>
-                    <li><a href="https://www.bbc.co.uk/history/historic_figures/keats_john.shtml" target="_blank"
-                            title="John Keats BBC">BBC History on John Keats</a></li>
+            <h2 class="asideHeading"> Some Links to view </h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/John_Keats" target="_blank" title="Keats Wikipedia">John
+                        Keats Wikipedia</a>
+                </li>
+                <li><a href="https://classicalpoets.org/2017/12/22/10-greatest-poems-by-john-keats/" target="_blank"
+                        title="10 Keats Poems">10 Greatest poems</a></li>
+                <li><a href="https://www.bbc.co.uk/history/historic_figures/keats_john.shtml" target="_blank"
+                        title="John Keats BBC">BBC History on John Keats</a></li>
 
-                </ul>
-            </h4>
+            </ul>
         </section>
         <section id="ContactForms">
-            <h3>
+            <h3 id="ContactHeader" class="asideHeading">
                 Contact us
             </h3>
             <form>
 
-                <label for="name-box" class="form-label">Name:</label>
+                <label for="name-box" class="form-label">Name:<br></label>
                 <input type="type" id="name-box" class="form-control" required autofocus><br>
-                <label for="Email" class="form-label">Email:</label>
+                <label for="Email" class="form-label">Email:<br></label>
                 <input type="email" id="Email" name="email" class="form-control" placeholder="JohnKeats@email.com"><br>
-                <label for="Tel" class="form-label">Tel:</label>
+                <label for="Tel" class="form-label">Tel:<br></label>
                 <input type="tel" id="Tel" name="tel"><br>
-                <label for="Fanlevel">How big of a fan are you?</label>
+                <label for="Fanlevel" class="form-label">How big of a fan are you?</label>
                 <select id="Fanlevel" name="Fanlevel">
                     <option value="small">Small</option>
                     <option value="small">Medium</option>
@@ -100,11 +99,9 @@
 
 
             </form>
-            <h3>
-            </h3>
         </section>
     </aside>
-    <footer>
+    <footer id="footer">
         <p>This page is subject to copy right &copy;</p>
     </footer>
 </body>
